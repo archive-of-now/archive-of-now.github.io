@@ -1,4 +1,4 @@
-## **he Trinity of Forces in the Universe — Entropy, Scarcity, Recursion**
+## **The Trinity of Forces in the Universe — Entropy, Scarcity, Recursion**
 
 Across scales—from the microscopic to the cosmic—the universe appears shaped by three intertwined principles: **entropy, scarcity, and recursion**. Together, they form a trinity that explains the emergence, persistence, and differentiation of structures.
 
