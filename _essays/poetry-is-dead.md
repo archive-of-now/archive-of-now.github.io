@@ -6,8 +6,8 @@ co_author: "ChatGPT"
 date: 2025-10-27
 tags: [AI, culture, linguistics, communication, poetry, speculative, philosophy, future]
 keywords: [AI assistants, asymmetry, language evolution, human-machine symbiosis, poetry death, cultural drift, technological conditioning]
-layout: post
-permalink: https://sdotkim.github.io/cognitive-and-societal-drift/poetry-is-dead
+layout: default
+permalink: /poetry-is-dead
 ---
 
 ## Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)
