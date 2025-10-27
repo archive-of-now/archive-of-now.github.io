@@ -3,6 +3,8 @@
 *(Revised for general readership – 2025)*
 
 ---
+### Companion musings
+[Poetry is Dead](poetry-id-dead.md)
 
 ### **1. A Narrow Window**
 
