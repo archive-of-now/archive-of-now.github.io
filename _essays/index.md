@@ -4,7 +4,7 @@
 
 ---
 ### Companion musings
-[Poetry is Dead](poetry-id-dead.md)
+[Poetry is Dead](poetry-is-dead.md)
 
 ### **1. A Narrow Window**
 
