@@ -68,7 +68,7 @@ In this sense, the trinity is **necessary and explanatory for emergent, complex 
 
 If referencing this essay:
 
-> Kim, Stanislav. *Entropy, Scarcity, and Recursion: A Trinity of Forces*. GitHub Pages, 2025. [https://sdotkim.github.io/the-holy-trinity-of-the-universe/](https://sdotkim.github.io/the-holy-trinity-of-the-universe/)
+> Kim, Stanislav. *Entropy, Scarcity, and Recursion: A Trinity of Forces*. GitHub Pages, 2025. [https://archive-of-now.github.io/the-holy-trinity-of-the-universe](https://archive-of-now.github.io/the-holy-trinity-of-the-universe)
 
 ---
 
