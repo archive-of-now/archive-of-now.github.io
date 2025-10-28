@@ -4,10 +4,6 @@
 title: Archive of Now
 description: "AI-assisted essays — reflections, observations, and warnings for our present age."
 url: "https://archive-of-now.github.io"
-collections:
-  essays:
-    output: true
-    permalink: /essays/:title/
 
 # Author (used by SEO tag)
 author:
@@ -20,6 +16,10 @@ authors:
   - Stanislav Kim
   - ChatGPT
 
+collections:
+  essays:
+    output: true
+    permalink: /:title
 
 # ===============================
 # MARKDOWN + BUILD
@@ -45,8 +45,6 @@ exclude:
 nav_links:
   - title: "Home"
     url: "/"
-  - title: "Essays"
-    url: "/essays/"
   - title: "About"
     url: "/about/"
 
