@@ -3,6 +3,23 @@ layout: default
 title: Home
 ---
 
-Welcome to **Archive of Now** — a collection of essays guided by a human voice, composed with AI assistance.
+# Featured Essay
 
-Explore the [Essays](/essays/) or read more [About](/about/).
+{% assign featured = site.essays | where_exp: "item", "item.featured == true" | first %}
+{% if featured %}
+## [{{ featured.title }}]({{ featured.url | relative_url }})
+{{ featured.content }}
+{% endif %}
+
+---
+
+# All Essays
+
+<ul>
+{% for essay in site.essays %}
+  <li>
+    <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
+    {% if essay.date %}<small>({{ essay.date | date: "%b %Y" }})</small>{% endif %}
+  </li>
+{% endfor %}
+</ul>

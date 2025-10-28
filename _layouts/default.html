@@ -3,14 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="{{ "/assets/style.css" | relative_url }}">
-  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% assign authors = {{ site.authors | join: ', ' }} %}
+  <!-- SEO Meta -->
+  <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+  <meta name="author" content="{{ authors }}">
+
+
+  <!-- Open Graph (for link previews) -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="article:author" content="{{ authors }}">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 </head>
 <body>
   <header>
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-    {% include nav.html %}
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a> ·
+      <a href="{{ '/essays/' | relative_url }}">Essays</a>
+    </nav>
   </header>
 
   <main>
@@ -18,7 +34,7 @@
   </main>
 
   <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    <small>© {{ site.title }}, {{ site.time | date: "%Y" }}</small>
   </footer>
 </body>
 </html>

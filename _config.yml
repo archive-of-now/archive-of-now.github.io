@@ -1,11 +1,40 @@
-title: "Archive of Now"
-description: "AI-assisted essays — observations, reflections, and warnings."
+# ===============================
+# SITE SETTINGS
+# ===============================
+title: Archive of Now
+description: "AI-assisted essays — reflections, observations, and warnings for our present age."
 url: "https://archive-of-now.github.io"
-baseurl: ""  # leave empty for org site
-theme: minima
-markdown: kramdown
+collections:
+  essays:
+    output: true
+    permalink: /essays/:title/
 
-# Site navigation (used by nav.html include)
+# Author (used by SEO tag)
+authors:
+  - Stanislav Kim
+  - ChatGPT
+
+# ===============================
+# MARKDOWN + BUILD
+# ===============================
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+theme: minima
+permalink: /:categories/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+
+# ===============================
+# NAVIGATION (used by nav.html)
+# ===============================
 nav_links:
   - title: "Home"
     url: "/"
@@ -14,6 +43,46 @@ nav_links:
   - title: "About"
     url: "/about/"
 
+# ===============================
+# SEO + DISCOVERY
+# ===============================
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feeds + sitemap are automatically generated at:
+#   /feed.xml
+#   /sitemap.xml
+
+
+# Ensure robots.txt allows indexing
+defaults:
+  - scope:
+      path: "essays"
+    values:
+      layout: default
+      seo:
+        type: "article"
+        name: "{{ page.title }}"
+        description: "{{ page.excerpt | strip_html | truncate: 160 }}"
+
+# ===============================
+# OUTPUT OPTIONS
+# ===============================
+timezone: "UTC"
+paginate_path: "/page:num"
+future: false
+show_drafts: false
+
+# ===============================
+# OPTIONAL SOCIAL PREVIEW (OG tags)
+# ===============================
+social:
+  twitter: ""
+  github: "your-org"
+  linkedin: ""
+
+# ===============================
+# END
+# ===============================
