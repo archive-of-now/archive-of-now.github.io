@@ -4,7 +4,8 @@
 
 ---
 ### Companion musings
-[Poetry is Dead](poetry-is-dead)
+  - [Poetry is Dead](poetry-is-dead)
+  - [The Missing Closure Protocol](missing-closure-protocol.md)
 
 ### **1. A Narrow Window**
 
