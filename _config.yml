@@ -10,9 +10,16 @@ collections:
     permalink: /essays/:title/
 
 # Author (used by SEO tag)
+author:
+  name: "Stanislav Kim"
+  email: ""
+  url: "https://archive-of-now.github.io/"
+  co_author: "ChatGPT"
+
 authors:
   - Stanislav Kim
   - ChatGPT
+
 
 # ===============================
 # MARKDOWN + BUILD
