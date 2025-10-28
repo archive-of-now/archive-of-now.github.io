@@ -1,0 +1,19 @@
+title: "Archive of Now"
+description: "AI-assisted essays — observations, reflections, and warnings."
+url: "https://archive-of-now.github.io"
+baseurl: ""  # leave empty for org site
+theme: minima
+markdown: kramdown
+
+# Site navigation (used by nav.html include)
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "Essays"
+    url: "/essays/"
+  - title: "About"
+    url: "/about/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
