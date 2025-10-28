@@ -1,0 +1,93 @@
+# ===============================
+# SITE SETTINGS
+# ===============================
+title: Archive of Now
+description: "AI-assisted essays — reflections, observations, and warnings for our present age."
+url: "https://archive-of-now.github.io/"
+
+# Author (used by SEO tag)
+author:
+  name: "Stanislav Kim"
+  email: ""
+  url: "https://archive-of-now.github.io/"
+  co_author: "ChatGPT"
+
+authors:
+  - Stanislav Kim
+  - ChatGPT
+
+collections:
+  essays:
+    output: true
+    permalink: /:title
+
+# ===============================
+# MARKDOWN + BUILD
+# ===============================
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+theme: minima
+permalink: /:categories/:title/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+
+# ===============================
+# NAVIGATION (used by nav.html)
+# ===============================
+nav_links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+
+# ===============================
+# SEO + DISCOVERY
+# ===============================
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feeds + sitemap are automatically generated at:
+#   /feed.xml
+#   /sitemap.xml
+
+
+# Ensure robots.txt allows indexing
+defaults:
+  - scope:
+      path: "_essays"
+    values:
+      layout: default
+      seo:
+        type: "article"
+        name: "{{ page.title }}"
+        description: "{{ page.excerpt | strip_html | truncate: 160 }}"
+
+# ===============================
+# OUTPUT OPTIONS
+# ===============================
+timezone: "UTC"
+paginate_path: "/page:num"
+future: false
+show_drafts: false
+
+# ===============================
+# OPTIONAL SOCIAL PREVIEW (OG tags)
+# ===============================
+social:
+  twitter: ""
+  github: "your-org"
+  linkedin: ""
+
+# ===============================
+# END
+# ===============================
