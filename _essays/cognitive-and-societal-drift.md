@@ -3,10 +3,6 @@
 *(Revised for general readership – 2025)*
 
 ---
-### Companion musings
-  - [Poetry is Dead](poetry-is-dead)
-  - [The Missing Closure Protocol](missing-closure-protocol.md)
-
 ### **1. A Narrow Window**
 
 The rate at which humans **use and structure cognition** is accelerating — not because our minds are evolving faster, but because the tools that shape how we think are changing faster than our ability to adapt.
