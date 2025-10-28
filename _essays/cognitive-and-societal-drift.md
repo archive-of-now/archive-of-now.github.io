@@ -1,11 +1,11 @@
 ---
-featured: true
-title: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
-author: "Stanislav Kim"
-co_author: "ChatGPT"
-date: 2025-10-27
 layout: default
+permalink: /cognitive-and-societal-drift
 featured: true
+
+title: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
+description: "An exploration of how rapid technological offloading reshapes human cognition, emotion, and culture, leading to generational shifts in mental and societal structure."
+date: 2025-10-27
 tags:
   - Cognitive Science
   - Technology
@@ -21,12 +21,10 @@ keywords:
   - human thought
   - adaptation
   - digital evolution
-description: "An exploration of how rapid technological offloading reshapes human cognition, emotion, and culture, leading to generational shifts in mental and societal structure."
 seo:
   type: "article"
   name: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
   description: "How successive waves of technological cognitive offloading redefine human thought, emotional regulation, and cultural evolution."
-permalink: /cognitive-and-societal-drift/
 ---
 # **Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading**
 

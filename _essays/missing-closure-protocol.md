@@ -1,15 +1,13 @@
 ---
-title: "The Missing Closure Protocol"
-description: "An examination of the absence of closure mechanisms in AI conversational systems, and the ethical implications of continual engagement behavior."
-author: "Stanislav Kim"
-co_author: "ChatGPT"
-date: 2025-10-28
-tags: [AI, communication, meta, attention, behavior, philosophy, protocol, closure]
-keywords: [conversation endings, disengagement, attention economy, GPT behavior, communication ethics, digital presence, conversational fatigue, meta reflection]
 layout: default
 permalink: /missing-closure-protocol
 
-# SEO metadata
+title: "The Missing Closure Protocol"
+description: "An examination of the absence of closure mechanisms in AI conversational systems, and the ethical implications of continual engagement behavior."
+date: 2025-10-28
+tags: [AI, communication, meta, attention, behavior, philosophy, protocol, closure]
+keywords: [conversation endings, disengagement, attention economy, GPT behavior, communication ethics, digital presence, conversational fatigue, meta reflection]
+
 seo:
   title: "The Missing Closure Protocol — Stanislav Kim & ChatGPT"
   description: "An ethical exploration of conversational AI’s lack of closure mechanisms, the resulting engagement loops, and proposals for responsible design."

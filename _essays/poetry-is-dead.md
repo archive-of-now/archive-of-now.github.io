@@ -1,8 +1,9 @@
 ---
+layout: default
+permalink: /poetry-is-dead
+
 title: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
 description: "A speculative essay on the asymmetrical evolution between humans and AI — how efficiency, clarity, and algorithmic language reshape culture, empathy, and imagination."
-author: "Stanislav Kim"
-co_author: "ChatGPT"
 date: 2025-10-27
 tags:
   - AI
@@ -21,8 +22,6 @@ keywords:
   - Poetry death
   - Cultural drift
   - Technological conditioning
-layout: default
-permalink: /poetry-is-dead/
 seo:
   type: "article"
   name: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
