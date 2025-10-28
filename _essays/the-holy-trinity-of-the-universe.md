@@ -1,9 +1,20 @@
 ---
+layout: default
+permalink: /the-holy-trinity-of-the-universe
 title: "Entropy, Scarcity, and Recursion: A Trinity of Forces"
 description: "Exploring entropy, scarcity, and recursion as the fundamental principles shaping emergent structures from cosmology to life and intelligence."
-author: "Stanislav Kim"
 date: 2025-10-26
+tags: [cosmology, physics, complexity, systems, philosophy, emergence, recursion, entropy, scarcity]
+keywords: [entropy, scarcity, recursion, emergent systems, complexity theory, self-organization, cosmological principles, universal dynamics, information theory, thermodynamics]
+seo:
+  canonical: "https://archive-of-now.github.io/the-holy-trinity-of-the-universe"
+  og_title: "Entropy, Scarcity, and Recursion: A Trinity of Forces"
+  og_description: "Exploring the universal trinity of entropy, scarcity, and recursion — forces shaping emergence across all scales of existence."
+  og_type: "article"
+  og_url: "https://archive-of-now.github.io/the-holy-trinity-of-the-universe"
+  og_site_name: "Archive of Now"
 ---
+
 
 # Entropy, Scarcity, and Recursion: A Trinity of Forces
 
