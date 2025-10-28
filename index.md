@@ -1,25 +1,20 @@
 ---
 layout: default
-title: Home
+title: Archive of Now
 ---
-
-{% assign featured = site.essays | where: "featured", true | first %}
-{% if featured %}
-# Featured Essay
-## [{{ featured.title }}]({{ featured.url | relative_url }})
-{{ featured.content }}
-{% endif %}
-
----
-
-# All Essays
-
-<ul>
 {% assign essays = site.essays | sort: "date" | reverse | where_exp: "item", "item.featured != true" %}
-{% for essay in essays %}
+{% assign featured = site.essays | where: "featured", true | first %}
+<ul class="essay-list">
+  {% if featured %}
   <li>
-    <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
-    {% if essay.date %}<small>({{ essay.date | date: "%b %Y" }})</small>{% endif %}
+    <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
+    <p>{{ featured.description | default: featured.excerpt }}</p>
   </li>
-{% endfor %}
+  {% endif %}
+  {% for essay in essays %}
+  <li>
+    <h2><a href="{{ essay.url | relative_url }}">{{ essay.title }}</a></h2>
+    <p>{{ essay.description | default: essay.excerpt }}</p>
+  </li>
+  {% endfor %}
 </ul>

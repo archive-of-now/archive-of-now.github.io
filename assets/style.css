@@ -26,3 +26,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.essay-list li:first-child {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+}
