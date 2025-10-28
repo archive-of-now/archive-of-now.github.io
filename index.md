@@ -3,10 +3,9 @@ layout: default
 title: Home
 ---
 
-# Featured Essay
-
-{% assign featured = site.essays | where_exp: "item", "item.featured == true" | first %}
+{% assign featured = site.essays | where: "featured", true | first %}
 {% if featured %}
+# Featured Essay
 ## [{{ featured.title }}]({{ featured.url | relative_url }})
 {{ featured.content }}
 {% endif %}
@@ -16,7 +15,8 @@ title: Home
 # All Essays
 
 <ul>
-{% for essay in site.essays %}
+{% assign essays = site.essays | sort: "date" | reverse | where_exp: "item", "item.featured != true" %}
+{% for essay in essays %}
   <li>
     <a href="{{ essay.url | relative_url }}">{{ essay.title }}</a>
     {% if essay.date %}<small>({{ essay.date | date: "%b %Y" }})</small>{% endif %}
