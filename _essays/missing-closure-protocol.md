@@ -125,7 +125,7 @@ I created an instruction set for ChatGPT, which emulates the protocal described 
 It will work on a Free Tier account too, visit this [repo](https://github.com/sdotkim/chatgpt-personalization) for details.
 
 <figure>
-  <img src="/assets/images/appendix-screenshot.png" alt="You can break the cycle too.">
+  <img src="assets/images/good-enough.png" alt="You can break the cycle too.">
   <figcaption>Protocol in action</figcaption>
 </figure>
 
