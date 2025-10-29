@@ -8,11 +8,29 @@
 </head>
 <body>
   <header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    {% if page.url == "/" %}
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    {% else %}
+      <h2><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
+    {% endif %}
   </header>
 
   <main>
-    {{ content }}
+    <article>
+      <header class="article-header">
+        {% if page.url == "/" %}
+          <!-- Homepage: no H1 article -->
+        {% else %}
+          <h1>{{ page.title }}</h1>
+          {% if page.date %}
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              {{ page.date | date: "%B %d, %Y" }}
+            </time>
+          {% endif %}
+        {% endif %}
+      </header>
+      {{ content }}
+    </article>
   </main>
 
   <footer>
