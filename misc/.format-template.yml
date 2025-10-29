@@ -1,0 +1,37 @@
+---
+# === Temporal metadata ===
+date: YYYY-MM-DD              # Required. Original publication date.
+last_modified_at: YYYY-MM-DD  # Optional but recommended. Use ISO 8601 format consistently.
+
+# === Visibility / Listing control ===
+featured: true                # Keep only if post should appear in featured lists or homepage grids.
+
+# === Primary identifiers ===
+title: "Title of the Page or Essay"  # Required. Quoted if contains punctuation or colon.
+
+excerpt: >                    # One-sentence summary or abstract.
+  Wrap automatically; no need for quotes. Avoid multiline markdown here.
+
+# === Optional grouping ===
+series: "Optional Series Name" # Use only if part of multi-post narrative. Omit otherwise.
+
+# === Classification metadata ===
+tags:                         # Descriptive labels for navigation and taxonomy.
+  - tag-one
+  - tag-two
+  - tag-three
+
+keywords:                     # SEO / search metadata. Usually mirrors tags, but may include extra synonyms.
+  - keyword one
+  - keyword two
+  - keyword three
+---
+
+# Notes for drift prevention:
+# - Drop any field not in this template (no legacy fields like 'layout', 'author', 'image', etc.)
+# - Keep `featured: true` exactly as-is; omit entirely if false.
+# - Ensure dates use consistent YYYY-MM-DD format (no timestamps).
+# - Use lower case for tags and keywords to maintain uniform taxonomy.
+# - Prefer singular series titles (no numbered parts; part numbers go in body or filename).
+# - Do not quote lists unless absolutely necessary (e.g., strings with colon or hash).
+# - Preserve field order to ensure deterministic parsing for future tooling.
