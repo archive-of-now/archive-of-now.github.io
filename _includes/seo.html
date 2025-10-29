@@ -8,17 +8,17 @@
 {%- endcomment -%}
 
 {%- assign canonical_url = site.url | append: site.baseurl | append: page.url -%}
-{%- assign seo_title = page.seo.title | default: page.title | default: site.title -%}
-{%- assign seo_description = page.seo.description | default: page.description | default: page.excerpt | default: site.description -%}
+{%- assign seo_title = page.title | default: site.title -%}
+{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- assign seo_type = page.seo.type | default: "article" -%}
-{%- assign seo_image = page.seo.image | default: page.image -%}
+{%- assign seo_image = page.image | default: page.seo.image -%}
 
 {%- comment -%}Merge & deduplicate keyword sources{%- endcomment -%}
-{%- assign keyword_list = page.keywords | default: empty -%}
-{%- assign tag_list = page.tags | default: empty -%}
+{%- assign keyword_list = page.keywords | default: [] | compact -%}
+{%- assign tag_list = page.tags | default: [] | compact -%}
 {%- assign all_keywords = keyword_list | concat: tag_list | uniq | join: ", " -%}
 
-{%- comment -%}Author handling (list → string → fallback){%- endcomment -%}
+{%- comment -%}Author handling{%- endcomment -%}
 {%- assign authors = site.authors | join: ", " | default: site.author.name -%}
 
 <title>{{ seo_title }}</title>

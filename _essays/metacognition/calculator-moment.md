@@ -4,7 +4,7 @@ last_modified_at: 2025-10-29
 
 title: "The Calculator Moment of Thought"
 series: "Metacognition"
-description: >
+excerpt: >
   AI assistants remove the friction of search — but that friction once trained
   the mind. What happens when reasoning itself becomes effortless?
 
