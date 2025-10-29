@@ -1,15 +1,27 @@
 ---
-title: "Delegated Introspection and the Calculator Moment of Thought"
 date: 2025-10-29
-tags: [metacognition, ai, cognition, reflection]
+last_modified_at: 2025-10-29
+
+title: "The Calculator Moment of Thought"
 series: "Metacognition"
-excerpt: "AI assistants remove the friction of search — but that friction once trained the mind. What happens when reasoning itself becomes effortless?"
-seo:
-  title: "Delegated Introspection and the Calculator Moment of Thought"
-  description: "Exploring how AI shifts our cognitive processes — when reasoning becomes effortless, what happens to the mental scaffolding built by effort?"
-  keywords: ["metacognition", "ai cognition", "delegated introspection", "calculator moment", "cognitive friction"]
-  canonical_url: "{{ site.url }}{{ page.url | absolute_url }}"
+description: >
+  AI assistants remove the friction of search — but that friction once trained
+  the mind. What happens when reasoning itself becomes effortless?
+
+tags:
+  - metacognition
+  - ai
+  - cognition
+  - reflection
+
+keywords:
+  - metacognition
+  - ai cognition
+  - delegated introspection
+  - calculator moment
+  - cognitive friction
 ---
+
 
 In the past ten days, my rate of information intake exploded. Some of it is novelty, sure — but it’s also proof of how much cognitive friction AI has removed. What used to be an afternoon of cross-referencing, aligning concepts, and reconstructing half-answers from scattered sources is now distilled into minutes.
 
