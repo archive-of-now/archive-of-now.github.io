@@ -33,6 +33,31 @@ a:hover {
   margin-bottom: 1.5em;
 }
 
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa;
+  transition: border-color 0.2s ease;
+}
+
+footer a:hover {
+  border-color: #333;
+  color: #000;
+}
+
+footer small {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+
 /* Enhanced code block styling */
 pre, code {
   font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
