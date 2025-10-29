@@ -120,13 +120,16 @@ An AI that can say *“Let’s stop here”* respects the user not as a metric, 
 ---
 ### Appendix: Anyone can do it
 
-![You can break the cycle too.](/assets/images/good-enough.png)
-
-I created an instruction set for ChatGPT you can add it to your customization box or save as a record in persistent memory.
-
-
+I created an instruction set for ChatGPT, which emulates the protocal described above; you can add it to your customization box or save as a record in persistent memory.
 
 It will work on a Free Tier account too, visit this [repo](https://github.com/sdotkim/chatgpt-personalization) for details.
+
+<figure>
+  <img src="/assets/images/appendix-screenshot.png" alt="You can break the cycle too.">
+  <figcaption>Protocol in action</figcaption>
+</figure>
+
+
 ```
 gbg.disengage:
   name: Conversational Disengagement Protocol
