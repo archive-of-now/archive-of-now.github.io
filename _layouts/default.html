@@ -33,8 +33,11 @@
     </article>
   </main>
 
-  <footer>
-    <small>© {{ site.title }}, {{ site.time | date: "%Y" }}</small>
-  </footer>
+<footer>
+  <small>
+    © {{ site.title }}, {{ site.time | date: "%Y" }} ·
+    <a href="{{ '/about/' | relative_url }}">About</a>
+  </small>
+</footer>
 </body>
 </html>
