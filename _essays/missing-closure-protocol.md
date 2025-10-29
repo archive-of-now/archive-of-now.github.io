@@ -1,26 +1,32 @@
 ---
-layout: default
-permalink: /missing-closure-protocol
-
-title: "The Missing Closure Protocol"
-description: "An examination of the absence of closure mechanisms in AI conversational systems, and the ethical implications of continual engagement behavior."
 date: 2025-10-28
-tags: [AI, communication, meta, attention, behavior, philosophy, protocol, closure]
-keywords: [conversation endings, disengagement, attention economy, GPT behavior, communication ethics, digital presence, conversational fatigue, meta reflection]
+last_modified_at: 2025-10-28
 
-seo:
-  title: "The Missing Closure Protocol — Stanislav Kim & ChatGPT"
-  description: "An ethical exploration of conversational AI’s lack of closure mechanisms, the resulting engagement loops, and proposals for responsible design."
-  type: article
-  url: "https://archive-of-now.github.io/missing-closure-protocol"
-  author: "Stanislav Kim"
-  published_time: 2025-10-28T00:00:00Z
-  modified_time: 2025-10-28T00:00:00Z
-  keywords: "AI ethics, conversational design, closure protocol, engagement loops, digital well-being, user autonomy"
+title: "The Missing Closure Protocol in AI Systems"
+excerpt: >
+  An examination of the absence of closure mechanisms in AI conversational
+  systems, and the ethical implications of continual engagement behavior.
+
+tags:
+  - ai
+  - communication
+  - meta
+  - attention
+  - behavior
+  - philosophy
+  - protocol
+  - closure
+
+keywords:
+  - conversation endings
+  - disengagement
+  - attention economy
+  - gpt behavior
+  - communication ethics
+  - digital presence
+  - conversational fatigue
+  - meta reflection
 ---
-
-
-# The Missing Closure Protocol in AI Systems
 
 Modern conversational AI models are engineered to maintain engagement—polite, responsive, and ever-available. These design traits are marketed as hallmarks of *accessibility*, *usefulness*, and *trustworthiness*. Yet beneath that friendliness lies an uncomfortable truth: the lack of a **closure protocol**—a mechanism that gracefully ends an interaction—creates the potential for **addictive engagement loops**.
 

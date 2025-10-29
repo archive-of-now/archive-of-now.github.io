@@ -1,32 +1,32 @@
 ---
-layout: default
-permalink: /cognitive-and-societal-drift
+date: 2025-10-27
+last_modified_at: 2025-10-29
 featured: true
 
 title: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
-description: "An exploration of how rapid technological offloading reshapes human cognition, emotion, and culture, leading to generational shifts in mental and societal structure."
-date: 2025-10-27
+excerpt: >
+  An exploration of how rapid technological offloading reshapes human cognition,
+  emotion, and culture, leading to generational shifts in mental and societal
+  structure.
+
 tags:
-  - Cognitive Science
-  - Technology
-  - AI
-  - Psychology
-  - Society
-  - Human Adaptation
+  - cognitive science
+  - technology
+  - ai
+  - psychology
+  - society
+  - human adaptation
+
 keywords:
-  - Cognitive Science
+  - cognitive science
   - cognitive drift
-  - Technology
+  - technology
   - artificial intelligence
   - human thought
   - adaptation
   - digital evolution
-seo:
-  type: "article"
-  name: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
-  description: "How successive waves of technological cognitive offloading redefine human thought, emotional regulation, and cultural evolution."
 ---
-# **Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading**
+
 
 *(Revised for general readership – 2025)*
 

@@ -1,30 +1,32 @@
 ---
-title: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
-description: "A speculative essay on the asymmetrical evolution between humans and AI — how efficiency, clarity, and algorithmic language reshape culture, empathy, and imagination."
 date: 2025-10-27
+last_modified_at: 2025-10-29
+
+title: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
+excerpt: >
+  A speculative essay on the asymmetrical evolution between humans and AI — how
+  efficiency, clarity, and algorithmic language reshape culture, empathy, and
+  imagination.
+
 tags:
-  - AI
-  - Culture
-  - Linguistics
-  - Communication
-  - Poetry
-  - Speculative
-  - Philosophy
-  - Future
+  - ai
+  - culture
+  - linguistics
+  - communication
+  - poetry
+  - speculative
+  - philosophy
+  - future
+
 keywords:
-  - AI assistants
-  - Asymmetry
-  - Language evolution
-  - Human-machine symbiosis
-  - Poetry death
-  - Cultural drift
-  - Technological conditioning
-seo:
-  type: "article"
-  name: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
-  description: "An essay on how AI-driven linguistic efficiency reshapes human expression, culture, and the slow death of poetic thought."
+  - ai assistants
+  - asymmetry
+  - language evolution
+  - human-machine symbiosis
+  - poetry death
+  - cultural drift
+  - technological conditioning
 ---
-## Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)
 
 At first, the change was invisible. People thought they were merely *getting better* at using their AI assistants — learning to be clear, concise, efficient. They called it **prompt literacy**. What they didn’t realize was that the literacy cut both ways. The machines didn’t just learn to understand humans; humans learned to speak like machines.
 
