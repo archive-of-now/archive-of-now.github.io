@@ -1,6 +1,11 @@
 # ===============================
 # SITE SETTINGS
 # ===============================
+
+# Logging / Verbosity
+verbose: true     # print detailed build info
+quiet: false      # suppress non-critical messages if true
+
 title: Archive of Now
 description: "AI-assisted essays — reflections, observations, and warnings for our present age."
 url: "https://archive-of-now.github.io/"
