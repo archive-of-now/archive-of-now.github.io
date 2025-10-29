@@ -12,9 +12,11 @@ title: Archive of Now
   </li>
   {% endif %}
   {% for essay in essays %}
-  <li>
-    <h2><a href="{{ essay.url | relative_url }}">{{ essay.title }}</a></h2>
-    <p>{{ essay.description | default: essay.excerpt }}</p>
-  </li>
+    {% unless essay.path contains 'index.md' %}
+      <li>
+        <h2><a href="{{ essay.url | relative_url }}">{{ essay.title }}</a></h2>
+        <p>{{ essay.description | default: essay.excerpt }}</p>
+      </li>
+    {% endunless %}
   {% endfor %}
 </ul>

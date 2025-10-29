@@ -1,10 +1,7 @@
 ---
-layout: default
-permalink: /delegated-introspection
 title: "Delegated Introspection"
 description: "On noticing an impulse, handing it off to a machine, and calling it a day."
 date: 2025-10-29
-author: Stanislav Kim
 tags: [metacognition, cognition, ai, authorship, recursion]
 keywords: [metacognition, cognitive reflection, ai coauthorship, introspection, human-machine collaboration]
 series: metacognition
@@ -12,7 +9,7 @@ seo:
   title: "Delegated Introspection – Archive of Now"
   description: "Stanislav Kim reflects on the new rhythm of self-awareness: noticing an impulse, delegating its analysis to an AI, and calling the process complete."
   type: article
-  url: https://archive-of-now.github.io/delegated-introspection
+  url: "{{ site.url }}{{ page.url | absolute_url }}"
   image: https://archive-of-now.github.io/assets/og/og-default.png
 ---
 

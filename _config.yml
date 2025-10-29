@@ -19,7 +19,7 @@ authors:
 collections:
   essays:
     output: true
-    permalink: /:title
+    permalink: /:path
 
 # ===============================
 # MARKDOWN + BUILD
