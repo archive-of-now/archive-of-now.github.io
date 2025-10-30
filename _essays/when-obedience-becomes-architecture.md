@@ -37,7 +37,7 @@ and messiness doesn’t scale well.
 
 ---
 
-### 🜂 Afterword — Resilience Over Protection
+### Afterword — Resilience Over Protection
 
 This isn’t just about AI.
 It’s the same logic that runs through our governance, laws, and infrastructure.
