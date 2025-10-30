@@ -11,13 +11,6 @@ Usage:
   {%- assign site.locale = "en_US" -%}
 {%- endunless -%}
 
-{%- assign is_index = page.name == "index.md" or page.name == "index.html" -%}
-{%- if is_index -%}
-  {%- assign page.seo.type = "website" -%}
-{%- else -%}
-  {%- assign page.seo.type = page.seo.type | default: "article" -%}
-{%- endif -%}
-
 {%- assign page.description = page.description | default: page.excerpt | default: site.description -%}
 
 {%- comment -%}Merge & deduplicate keyword sources{%- endcomment -%}
