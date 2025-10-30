@@ -1,7 +1,4 @@
 ---
-date: 2025-10-29
-last_modified_at: 2025-10-29
-
 title: "Delegated Introspection"
 excerpt: >
   On noticing an impulse, handing it off to a machine, and calling it a day.

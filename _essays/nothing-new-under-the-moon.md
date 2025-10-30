@@ -1,6 +1,4 @@
 ---
-date: 2025-10-29
-last_modified_at: 2025-10-29
 title: "Nothing New Under the Moon"
 excerpt: >
   Even as search evolves from tabs to chats, the instinct to keep unfinished thoughts remains unchanged — continuity disguised as progress.

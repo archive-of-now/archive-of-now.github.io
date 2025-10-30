@@ -1,7 +1,4 @@
 ---
-date: 2025-10-27
-last_modified_at: 2025-10-29
-
 title: "Poetry Is Dead, It Just Doesn’t Know It Yet (2045 Edition)"
 excerpt: >
   A speculative essay on the asymmetrical evolution between humans and AI — how

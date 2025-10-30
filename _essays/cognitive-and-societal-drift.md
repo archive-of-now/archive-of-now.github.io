@@ -1,6 +1,4 @@
 ---
-date: 2025-10-27
-last_modified_at: 2025-10-29
 featured: true
 
 title: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"

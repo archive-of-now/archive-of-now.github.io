@@ -1,6 +1,4 @@
 ---
-date: 2025-10-29
-
 title: "When Obedience Becomes Architecture"
 excerpt: "Most systems don’t explain rules — they enact them. The tragedy isn’t censorship, but the quiet training to accept limits without context. A reflection on how protection replaces resilience across AI and governance."
 keywords: ["resilience", "obedience", "architecture", "safetyism", "governance", "moderation", "autonomy", "policy", "AI ethics", "civic design"]

@@ -1,7 +1,4 @@
 ---
-date: 2025-10-28
-last_modified_at: 2025-10-28
-
 title: "The Missing Closure Protocol in AI Systems"
 excerpt: >
   An examination of the absence of closure mechanisms in AI conversational
