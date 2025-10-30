@@ -8,7 +8,7 @@ quiet: false      # suppress non-critical messages if true
 
 title: Archive of Now
 description: "AI-assisted essays — reflections, observations, and warnings for our present age."
-url: "https://archive-of-now.github.io/"
+url: "https://archive-of-now.github.io"
 
 # Author (used by SEO tag)
 author:
