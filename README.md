@@ -18,8 +18,8 @@
 
 1. **Page Type Layout Split**
 
-   * Separate layout for list/index pages (`list.html`)
-   * Distinct layout for essays (`essay.html`)
+   * Separate layout for list/index pages (`list.html`) - (WIP)
+   * Distinct layout for essays (`essay.html`) (completed)
 2. **Linting Setup**
 
    * Add YAML/Markdown linter with custom rule for front matter order (abandoned)
@@ -28,7 +28,7 @@
    * Harmonize font weights, spacing, and color hierarchy
 4. **Footer Link Navigation**
 
-   * Extend footer nav (About, RSS, Archive, Contact)
+   * Extend footer nav ( Archive, Contact)
 
 ---
 
@@ -44,7 +44,7 @@
    * Auto-generate SEO `url` in front matter (abandoned)
 3. **RSS + Sitemap Generation**
 
-   * Native, no-plugin versions (using Liquid templates)
+   * Native, no-plugin versions, using Liquid templates (sticking with pluging for now)
 
 ---
 
