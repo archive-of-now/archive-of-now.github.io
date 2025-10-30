@@ -3,4 +3,8 @@
   {% include seo.html %}
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {%- comment -%}
+Optional extras (uncomment if desired)
+<link rel="alternate" type="application/rss+xml" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+{%- endcomment -%}
 </head>

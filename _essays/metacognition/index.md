@@ -3,6 +3,8 @@ layout: default
 permalink: /metacognition/
 title: Metacognition
 description: Part of the ongoing Metacognition series — exploring thought about thought, and how tools like AI reshape our ways of knowing.
+seo:
+  type: website
 ---
 
 <section class="series-index">
