@@ -29,7 +29,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-theme: minima
 permalink: /:categories/:title/
 exclude:
   - Gemfile
