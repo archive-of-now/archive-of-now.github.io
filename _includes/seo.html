@@ -17,12 +17,6 @@ Usage:
 {%- assign page.title = page.title | default: site.title -%}
 {%- assign page.description = page.description | default: page.excerpt | default: site.description -%}
 
-{%- if site.authors -%}
-  {%- assign page.author = site.authors | join: ", " -%}
-{%- else -%}
-  {%- assign page.author = site.author.name | default: site.title -%}
-{%- endif -%}
-
 {%- comment -%}Merge & deduplicate keyword sources{%- endcomment -%}
 {%- assign keyword_list = page.keywords | default: [] | compact -%}
 {%- assign tag_list = page.tags | default: [] | compact -%}

@@ -12,13 +12,9 @@ url: "https://archive-of-now.github.io"
 
 # Author (used by SEO tag)
 author:
-  name: "Stanislav Kim"
+  name: "Stanislav Kim, ChatGPT"
   email: ""
   url: "https://archive-of-now.github.io"
-
-authors:
-  - Stanislav Kim
-  - ChatGPT
 
 collections:
   essays:
