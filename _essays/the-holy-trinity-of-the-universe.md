@@ -1,7 +1,4 @@
 ---
-date: 2025-10-26
-last_modified_at: 2025-10-29
-
 title: "Entropy, Scarcity, and Recursion: A Trinity of Forces"
 excerpt: >
   Exploring entropy, scarcity, and recursion as the fundamental principles

@@ -32,9 +32,9 @@ jobs:
         run: |
           for f in $(find _essays -name "*.md"); do
             # Get first (added) commit date
-            published=$(git log --diff-filter=A --follow --format=%cs -- "$f" | tail -1)
+            published=$(git log --diff-filter=A --follow --format=%cI -- "$f" | tail -1)
             # Get last (most recent) commit date
-            modified=$(git log -1 --format=%cs -- "$f")
+            modified=$(git log -1 --format=%cI -- "$f")
             # Fallback in case published is empty
             [ -z "$published" ] && published=$modified
 
