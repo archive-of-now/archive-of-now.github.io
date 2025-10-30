@@ -52,8 +52,8 @@ nav_links:
 # SEO + DISCOVERY
 # ===============================
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-feed
   - jekyll-sitemap
 
 # Feeds + sitemap are automatically generated at:
