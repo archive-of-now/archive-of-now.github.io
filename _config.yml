@@ -73,8 +73,6 @@ defaults:
       layout: essay
       seo:
         type: "article"
-        name: "{{ page.title }}"
-        description: "{{ page.excerpt | strip_html | truncate: 160 }}"
 
 # ===============================
 # OUTPUT OPTIONS
