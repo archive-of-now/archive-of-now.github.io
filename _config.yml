@@ -15,7 +15,6 @@ author:
   name: "Stanislav Kim"
   email: ""
   url: "https://archive-of-now.github.io"
-  co_author: "ChatGPT"
 
 authors:
   - Stanislav Kim
@@ -71,7 +70,7 @@ defaults:
   - scope:
       path: "_essays"
     values:
-      layout: default
+      layout: essay
       seo:
         type: "article"
         name: "{{ page.title }}"
