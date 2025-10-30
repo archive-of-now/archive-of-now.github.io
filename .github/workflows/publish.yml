@@ -49,7 +49,7 @@ jobs:
           done
 
       - name: Build site
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace --verbose
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
