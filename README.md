@@ -36,12 +36,12 @@
 
 1. **GitHub Actions Integration**
 
-   * Automated build + deploy for commits to `main`
-   * Optional Jekyll build validation
+   * Automated build + deploy for commits to `main` (completed)
+   * Optional Jekyll build validation (abandoned)
 2. **Metadata Automation**
 
-   * Auto-inject `last_modified_at` from commit timestamp
-   * Auto-generate SEO `url` in front matter
+   * Auto-inject `last_modified_at` from commit timestamp (completed)
+   * Auto-generate SEO `url` in front matter (abandoned)
 3. **RSS + Sitemap Generation**
 
    * Native, no-plugin versions (using Liquid templates)

@@ -7,14 +7,7 @@
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    {% if page.url == "/" %}
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    {% else %}
-      <h2><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h2>
-    {% endif %}
-  </header>
-
+  {% include header.html %}
   <main>
     <article>
       <header class="article-header">
@@ -32,12 +25,6 @@
       {{ content }}
     </article>
   </main>
-
-<footer>
-  <small>
-    <a href="{{ '/about' | relative_url }}">About</a><br>
-    © {{ site.title }}, {{ site.time | date: "%Y" }}
-  </small>
-</footer>
+  {% include footer.html %}
 </body>
 </html>
