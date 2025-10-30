@@ -1,0 +1,68 @@
+name: Build Archive of Now
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for commit date extraction
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+
+      - name: Inject published and modified dates
+        run: |
+          for f in $(find _essays -name "*.md"); do
+            # Get first (added) commit date
+            published=$(git log --diff-filter=A --follow --format=%cs -- "$f" | tail -1)
+            # Get last (most recent) commit date
+            modified=$(git log -1 --format=%cs -- "$f")
+            # Fallback in case published is empty
+            [ -z "$published" ] && published=$modified
+
+            # Remove any existing injected lines for idempotency
+            sed -i '/^date: /d' "$f"
+            sed -i '/^last_modified_at: /d' "$f"
+
+            # Insert at the top, after opening front matter delimiter
+            awk -v pub="$published" -v mod="$modified" '
+              NR==1{print; print "date: " pub; print "last_modified_at: " mod; next}1
+            ' "$f" > tmp && mv tmp "$f"
+          done
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
