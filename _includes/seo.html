@@ -12,9 +12,12 @@ Usage:
 {%- endunless -%}
 
 {%- assign is_index = page.name == "index.md" or page.name == "index.html" -%}
-{%- assign page.seo.type = page.seo.type | default: (is_index and "website" or "article") -%}
+{%- if is_index -%}
+  {%- assign page.seo.type = "website" -%}
+{%- else -%}
+  {%- assign page.seo.type = page.seo.type | default: "article" -%}
+{%- endif -%}
 
-{%- assign page.title = page.title | default: site.title -%}
 {%- assign page.description = page.description | default: page.excerpt | default: site.description -%}
 
 {%- comment -%}Merge & deduplicate keyword sources{%- endcomment -%}
