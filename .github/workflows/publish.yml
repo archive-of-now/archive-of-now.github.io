@@ -28,23 +28,40 @@ jobs:
           ruby-version: 3.1
           bundler-cache: true
 
-      - name: Ensure Gemfile.lock exists and is committed
+      - name: Ensure Gemfile.lock is current
         run: |
-          # Generate Gemfile.lock if missing
+          # Generate or update Gemfile.lock if needed
           if [ ! -f Gemfile.lock ]; then
-            echo "Gemfile.lock not found — generating..."
+            echo "No Gemfile.lock found — generating..."
             bundle lock
-            echo "Gemfile.lock created."
+            changed=1
+          else
+            echo "Gemfile.lock exists — checking for Gemfile changes..."
+            # Bundler will quietly update lockfile if Gemfile changed
+            bundle lock --update --conservative || true
+            if git diff --quiet Gemfile.lock; then
+              echo "Gemfile.lock up-to-date."
+              changed=0
+            else
+              echo "Gemfile.lock updated."
+              changed=1
+            fi
+          fi
 
-            # Commit and push back to the repo (only if on default branch)
+          if [ "$changed" = "1" ]; then
+            echo "Committing Gemfile.lock changes..."
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add Gemfile.lock
-            git commit -m "Add auto-generated Gemfile.lock [skip ci]" || echo "No changes to commit"
-            git push origin HEAD || echo "Could not push (likely no permissions in fork)"
-          else
-            echo "Gemfile.lock already present — skipping."
+            git commit -m "Auto-update Gemfile.lock [skip ci]" || echo "No changes to commit"
+            # Only push on main/default branch
+            if [[ "${GITHUB_REF##*/}" == "main" || "${GITHUB_REF##*/}" == "master" ]]; then
+              git push origin HEAD || echo "Push skipped (no permission or PR build)"
+            else
+              echo "Not on default branch — skip push."
+            fi
           fi
+
 
       - name: Inject published and modified dates
         run: |
