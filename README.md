@@ -22,7 +22,7 @@
    * Distinct layout for essays (`essay.html`)
 2. **Linting Setup**
 
-   * Add YAML/Markdown linter with custom rule for front matter order
+   * Add YAML/Markdown linter with custom rule for front matter order (abandoned)
 3. **Site Typography and Spacing Pass**
 
    * Harmonize font weights, spacing, and color hierarchy
