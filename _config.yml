@@ -78,6 +78,14 @@ paginate_path: "/page:num"
 future: false
 show_drafts: false
 
+
+# ===============================
+# RSS Feed config
+# ===============================
+feed:
+  collections:
+    - essays
+
 # ===============================
 # OPTIONAL SOCIAL PREVIEW (OG tags)
 # ===============================
