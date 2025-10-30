@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -39,12 +39,12 @@ jobs:
             echo "Gemfile.lock exists — checking for Gemfile changes..."
             # Bundler will quietly update lockfile if Gemfile changed
             bundle lock --update --conservative || true
-            if git diff --quiet Gemfile.lock; then
+            if [ ! -f Gemfile.lock ] || ! git ls-files --error-unmatch Gemfile.lock >/dev/null 2>&1 || ! git diff --quiet Gemfile.lock; then
+              echo "Gemfile.lock created or updated."
+              changed=1
+            else
               echo "Gemfile.lock up-to-date."
               changed=0
-            else
-              echo "Gemfile.lock updated."
-              changed=1
             fi
           fi
 
