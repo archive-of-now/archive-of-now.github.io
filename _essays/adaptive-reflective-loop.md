@@ -5,6 +5,8 @@ description: "A policy brief outlining the Adaptive Reflective Loop (ARL) — a 
 
 *Policy Brief*
 
+Kim, S. (2025). The Adaptive Reflective Loop (ARL): A Normative Framework for Ethical Cognitive Systems (Version 1.0) [Policy proposal]. Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17488957.svg)](https://doi.org/10.5281/zenodo.17488957)
+
 ---
 
 ### Abstract
