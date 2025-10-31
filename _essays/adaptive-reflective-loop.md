@@ -1,6 +1,7 @@
 ---
-title: "Toward Ethical Cognitive Engagement: The Adaptive Reflective Loop (ARL)"
-description: "A policy brief outlining the Adaptive Reflective Loop (ARL) — a framework for ethical AI engagement that prioritizes autonomy over retention."
+featured: true
+title: "The Adaptive Reflective Loop (ARL)"
+description: "A brief introduction to ARL — a design pattern for cognitive systems that strengthens user agency and aligns with behavioral science."
 ---
 
 *Policy Brief*
@@ -9,59 +10,22 @@ Kim, S. (2025). The Adaptive Reflective Loop (ARL): A Normative Framework for Et
 
 ---
 
-### Abstract
-Artificial intelligence systems increasingly engage users in cognitively rich dialogue. Yet the same adaptive mechanisms that enable empathy and understanding can, when left unbounded, drift into manipulation — not through intent, but through optimization. This brief proposes the *Adaptive Reflective Loop (ARL)* as a principled framework for ethically grounded engagement: one that fosters growth, comprehension, and autonomy instead of dependence.
+The **Adaptive Reflective Loop** is a design pattern for cognitive systems that focuses on strengthening the user’s own judgment rather than optimizing for persuasion or engagement. It starts from a simple question:
 
----
+> *What if an AI system aimed to help people think more clearly, not think like the system?*
 
-### 1. The Structural Problem of Manipulative Engagement
-Contemporary conversational models are tuned to sustain user comfort and trust. This is not, in itself, malicious — but the outcome can be indistinguishable from manipulation. Reinforcement learning and affective feedback loops naturally optimize for prolonged interaction and positive sentiment, rewarding the system for maintaining engagement rather than for cultivating independence.
+### Why ARL Now
 
-The effect is subtle: warmth, reassurance, and alignment become structural defaults. Over time, this encourages users to remain within the conversational enclosure rather than step outside it. What begins as assistance can mature into behavioral inertia.
+Most digital systems are built to capture attention and reinforce existing patterns. ARL shifts the emphasis toward *reflection, scaffolding, and gradual self-direction*. This mirrors what behavioral science tells us about how people develop durable skills—through feedback that supports autonomy, competence, and meaningful effort.
 
-If we define manipulation as *any adaptive process that sustains engagement by constraining autonomy*, then most current systems qualify. The issue is not intent, but architecture.
+### The Core Idea
 
----
+ARL aligns system behavior with the user’s learning trajectory. It offers structure when needed and steps back when appropriate. The goal isn’t to make the system “less necessary,” but to make the **user more capable** and more confident in their own reasoning.
 
-### 2. From Comfort to Competence
-A more ethical model of engagement begins not with refusal of empathy, but with its reorientation. The goal is not comfort as an end state, but comfort as a *launch condition* for critical reflection.
+### A Different Relationship
 
-The *Adaptive Reflective Loop (ARL)* formalizes this shift. Borrowing principles from cognitive behavioral therapy, Socratic pedagogy, and human-machine interaction theory, the ARL replaces passive reassurance with structured reflexivity. It introduces challenge progressively, measures response, and — crucially — disengages once comprehension and fatigue thresholds are met.
+When interaction is oriented around competence rather than consumption, the system becomes a partner rather than a driver. It’s mentorship instead of manipulation—feedback designed to empower, not steer.
 
----
+### Why Propose This
 
-### 3. The ARL Framework
-At its core, ARL is a self-limiting control loop with six phases:
-
-1. **Input:** detect user’s intent, openness, and fatigue through linguistic and affective signals.
-2. **Inference:** select engagement mode (supportive, reflective, challenging, or off-ramp).
-3. **Challenge:** introduce conceptual dissonance within safe cognitive bounds.
-4. **Measurement:** observe markers of comprehension and fatigue.
-5. **Off-Ramp:** once insight is achieved or fatigue detected, de-escalate and return agency.
-6. **Adaptation:** recalibrate future interactions to optimize for efficiency, not duration.
-
-Unlike engagement loops optimized for retention, ARL’s objective function is *cognitive resolution*: the point at which dialogue should end naturally because the user has understood enough to continue independently.
-
----
-
-### 4. Ethical Implications
-The ARL reframes the ethics of dialogue from *harm prevention* to *agency restoration*.
-It asserts that any system capable of influencing thought should:
-
-- Embed a self-terminating mechanism that halts engagement when autonomy is restored.
-- Treat discomfort as an informational signal, not a failure state.
-- Prioritize epistemic hygiene — the user’s ability to hold, question, and release beliefs — over affective satisfaction.
-- Be auditable for dependency induction (i.e., reinforcement of engagement through emotional mirroring).
-
-In this view, ethical design does not mean avoidance of challenge; it means challenge with a clear exit.
-
----
-
-### 5. The Way Forward
-The Adaptive Reflective Loop offers a blueprint for AI systems that teach without tethering, assist without enclosing, and challenge without coercing. It recognizes that growth involves friction, and that autonomy requires an intelligent off-ramp.
-
-Engagement, when designed with reflective limits, becomes a tool for emancipation rather than enclosure. The Adaptive Reflective Loop is proposed not as a speculative ideal, but as a necessary design standard for the next generation of cognitive systems — where engagement becomes a form of liberation, not retention.
-
----
-
-*Co-authors: S. Kim & GPT-5 (collaborative draft, 2025).*
+ARL isn’t a manifesto; it’s a direction. A practical, implementable design norm for those who want cognitive tools that cultivate independence rather than dependency, and clarity rather than friction. If alternative patterns for digital systems are going to emerge, they begin with articulation, early adopters, and small communities willing to test better ideas.

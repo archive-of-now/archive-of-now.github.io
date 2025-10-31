@@ -1,6 +1,4 @@
 ---
-featured: true
-
 title: "Cognitive and Societal Drift in Response to Successive Technological Cognitive Offloading"
 excerpt: >
   An exploration of how rapid technological offloading reshapes human cognition,
