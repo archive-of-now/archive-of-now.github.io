@@ -8,11 +8,6 @@ seo:
 ---
 
 <section class="series-index">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-  </header>
-
   <ul>
     {%- assign essays = site.essays
          | where_exp: "e", "e.path contains '/trinity/'"

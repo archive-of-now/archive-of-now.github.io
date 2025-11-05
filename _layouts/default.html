@@ -10,11 +10,7 @@
           <!-- Homepage: no H1 article -->
         {% else %}
           <h1>{{ page.title }}</h1>
-          {% if page.date %}
-            <time datetime="{{ page.date | date_to_xmlschema }}">
-              {{ page.date | date: "%B %d, %Y" }}
-            </time>
-          {% endif %}
+          <p>{{ page.description }}</p>
         {% endif %}
       </header>
       {{ content }}
