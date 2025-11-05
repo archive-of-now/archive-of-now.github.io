@@ -9,7 +9,7 @@ seo:
 
 <section class="series-index">
   <ul>
-    {%- assign essays = site.essays | where_exp: "e", "e.path contains '/metacognition/'" | sort: "date" | reverse -%}
+    {%- assign essays = site.essays | where_exp: "e", "e.path contains '/metacognition/'" | sort: "date" -%}
     {%- assign featured = essays | where: "featured", true | first -%}
 
     {%- if featured and featured.path != page.path -%}
