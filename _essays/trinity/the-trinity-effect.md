@@ -7,7 +7,7 @@ description: "Exploring how entropy, scarcity, and recursion give rise to The Tr
 
 Across scales—from microscopic interactions to galactic formations—systems appear shaped by three intertwined forces: **entropy**, **scarcity**, and **recursion**. While this trinity is a speculative analytical construct rather than a proven law of nature, it provides a compelling lens to interpret emergent patterns across physical, biological, and social domains.
 
-This essay builds upon the ideas introduced in my previous post, ["The Holy Trinity of the Universe"]( /the-holy-trinity-of-the-universe ), which explores entropy, scarcity, and recursion as the foundational forces shaping all emergent structures.
+This essay builds upon the ideas introduced in my previous post, ["The Holy Trinity of the Universe"]( /trinity/the-holy-trinity-of-the-universe ), which explores entropy, scarcity, and recursion as the foundational forces shaping all emergent structures.
 
 When applied to human and non-human societies, the trinity gives rise to **The Trinity Effect**: a predictable, high-level attractor that structures collective behavior, hierarchies, and trajectories at the system level. It is neither supernatural nor metaphysical; rather, it is a **structural artifact of interacting systemic forces**, observable wherever recursive social interactions occur under constraints.
 
