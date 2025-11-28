@@ -1,15 +1,19 @@
 ---
 layout: default
 permalink: /trinity/
-title: Universe's Trinity of Forces
-description: A multi-part series exploring the foundational forces — entropy, scarcity, and recursion — that give rise to the Trinity Effect, meta-power, societal vectors, and the structural patterns shaping human civilization.
+title: Universe's Trinity
+description: |
+  An exploration of how a minimal three-part grammar helps explain persistent
+  patterns in ecosystems, institutions, markets, geopolitics, and other complex systems.
+
 seo:
   type: website
 ---
 
+**Recommended reading order: top-down**
 <section class="series-index">
   <ul>
-    {%- assign essays = site.trinity | sort: "date" -%}
+    {%- assign essays = site.trinity | sort: "sort_index" -%}
 
     {%- for essay in essays -%}
       {%- unless essay.path contains 'index.md' -%}

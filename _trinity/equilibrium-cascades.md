@@ -1,12 +1,11 @@
 ---
+sort_index: 4
 title: Equilibrium Cascades
 description: |
-    A study of how systems leave their attractors and traverse Equilibrium Cascades,
-    as entropy, scarcity, recursion, and velocity reshape the underlying field.
+    An analysis of Equilibrium Cascades: turbulent passages where
+    established attractors fail and the surrounding field is rapidly rewritten.
 
 ---
-
-# Equilibrium Cascades
 
 *Turbulent rebalancing in a field shaped by Universe’s Trinity.*
 

@@ -1,10 +1,10 @@
 ---
+sort_index: 3
 title: "Meta-Power"
 description: |
     An examination of meta-power: the ledger of Trinity Effects layered over
     time, hardening into institutional, infrastructural, and epistemic fields.
 ---
-# Meta-Power
 
 *Second-order fields in a world shaped by Universe’s Trinity.*
 

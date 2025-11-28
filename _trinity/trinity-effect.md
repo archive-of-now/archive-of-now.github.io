@@ -1,10 +1,10 @@
 ---
+sort_index: 2
 title: "The Trinity Effect"
 excerpt: |
-   An examination of the Trinity Effect: how entropy, scarcity, and
-   recursion generate stable attractors in living systems and human societies.
+   An examination of the Trinity Effect: how a minimal triadic structure
+   produces recurring macro-patterns in ecosystems and human systems.
 ---
-# **The Trinity Effect**
 
 *First-order emergence in a world shaped by Universe’s Trinity.*
 

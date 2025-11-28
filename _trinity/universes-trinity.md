@@ -1,9 +1,11 @@
 ---
+sort_index: 1
 layout: trinity
 title: "Universe’s Trinity"
-excerpt: >
+excerpt: |
   A study of the patterns that shape how systems form, stabilize,
   and transform across scales—from stars to societies to minds.
+
 ---
 
 *A minimal grammar for how systems keep themselves alive.*
