@@ -1,28 +1,23 @@
-# Match GitHub Actions environment
+# syntax=docker/dockerfile:1.4
 FROM ruby:3.1-slim
 
-# Install build dependencies for common Jekyll plugins
+# ---- System deps ----
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      build-essential \
-      git \
-      libffi-dev \
-      zlib1g-dev \
-      libxml2-dev \
-      libxslt1-dev \
-      pkg-config \
+    build-essential git nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-# Create workspace
+# ---- Stable Gemfile layer ----
+# Gems will install here, isolated from /site
+WORKDIR /bundle_base
+COPY Gemfile Gemfile.lock* ./
+RUN gem install bundler && \
+    bundle config set --local path '/usr/local/bundle' && \
+    bundle install
+
+# ---- Runtime working directory ----
 WORKDIR /site
 
-# Pre-copy Gemfiles for efficient caching
-COPY Gemfile Gemfile.lock /site/
+RUN useradd -m dev
+USER 1000:1000
 
-# Install bundle dependencies
-RUN bundle install
-
-# Copy the rest of the project
-COPY . .
-
-# Default command: same as in GitHub Action
-CMD ["bundle", "exec", "jekyll", "build", "--trace", "--verbose"]
+CMD ["jekyll", "serve", "--livereload", "--host", "0.0.0.0"]
