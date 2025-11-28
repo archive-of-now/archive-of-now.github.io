@@ -20,6 +20,9 @@ collections:
   essays:
     output: true
     permalink: /:path
+  trinity:
+    output: true
+    permalink: /trinity/:path
 
 # ===============================
 # MARKDOWN + BUILD
@@ -66,6 +69,12 @@ defaults:
       path: "_essays"
     values:
       layout: essay
+      seo:
+        type: "article"
+  - scope:
+      path: "_trinity"
+    values:
+      layout: trinity
       seo:
         type: "article"
 
