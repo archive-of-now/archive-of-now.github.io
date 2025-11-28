@@ -22,7 +22,7 @@ build: build-image
 		-v $(PWD):/site:Z \
 		-w /site \
 		$(IMAGE_NAME) \
-		bundle install && bundle exec jekyll build --destination $(JEKYLL_OUTPUT_DIR) --trace --verbose
+		sh -c "bundle install && bundle exec jekyll build --destination $(JEKYLL_OUTPUT_DIR) --trace --verbose"
 
 # Live development server (auto reload)
 serve: build-image
