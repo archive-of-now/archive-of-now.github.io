@@ -1,4 +1,5 @@
 ---
+layout: trinity
 title: "Universe’s Trinity"
 excerpt: >
   A study of the patterns that shape how systems form, stabilize,
@@ -213,6 +214,3 @@ a system-level attractor from which the rest flows, including the cascades that 
 Everything else is elaboration.
 
 Everything complex lives in the tension between dissipation, constraint, and self-reference. Trinity simply names the grammar.
-
-
-> “Developed in dialogue with GPT, used here as a cognitive instrument for refinement and clarity. The conceptual framework and all core ideas originate with the author.”
