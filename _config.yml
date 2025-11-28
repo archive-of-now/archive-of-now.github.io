@@ -23,6 +23,9 @@ collections:
   trinity:
     output: true
     permalink: /trinity/:path
+  autonomy:
+    output: true
+    permalink: /autonomy/:path
 
 # ===============================
 # MARKDOWN + BUILD
@@ -69,6 +72,12 @@ defaults:
       path: "_essays"
     values:
       layout: essay
+      seo:
+        type: "article"
+  - scope:
+      path: "_autonomy"
+    values:
+      layout: default
       seo:
         type: "article"
   - scope:
