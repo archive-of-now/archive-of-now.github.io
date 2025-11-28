@@ -9,17 +9,7 @@ seo:
 
 <section class="series-index">
   <ul>
-    {%- assign essays = site.essays
-         | where_exp: "e", "e.path contains '/trinity/'"
-         | sort: "date" -%}
-    {%- assign featured = essays | where: "featured", true | first -%}
-
-    {%- if featured and featured.path != page.path -%}
-      <li class="featured">
-        <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
-        <p>{{ featured.description | default: featured.excerpt }}</p>
-      </li>
-    {%- endif -%}
+    {%- assign essays = site.trinity | sort: "date" -%}
 
     {%- for essay in essays -%}
       {%- unless essay.path contains 'index.md' -%}
