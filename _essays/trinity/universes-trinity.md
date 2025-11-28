@@ -1,8 +1,8 @@
 ---
 title: "Universe’s Trinity"
 excerpt: >
-  Exploring entropy, scarcity, and recursion as the fundamental principles
-  shaping emergent structures from cosmology to life and intelligence.
+  A study of the patterns that shape how systems form, stabilize,
+  and transform across scales—from stars to societies to minds.
 ---
 
 *A minimal grammar for how systems keep themselves alive.*
