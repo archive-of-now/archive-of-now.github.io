@@ -1,0 +1,285 @@
+/* =========== NAMESPACE =========== */
+main.trinity {
+  max-width: 42rem;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+
+/* Both index + entry articles */
+main.trinity .trinity-entry,
+main.trinity .trinity-index {
+  margin: 0 auto;
+}
+
+/* Shared article header */
+main.trinity .article-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main.trinity .article-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+
+/* =========== INDEX PAGE =========== */
+.trinity-index .article-header p {
+  margin: 0;
+  color: #666;
+}
+
+main.trinity .trinity-index ul.trinity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main.trinity .trinity-index ul.trinity-list .entry {
+  margin: 1.5rem 0;
+}
+
+/* the pill + title + description flex layout we did earlier */
+.trinity-index .trinity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* one entry */
+.trinity-index .trinity-list .entry {
+  margin: 1.5rem 0;
+}
+
+/* make whole block clickable + grid layout */
+.trinity-index .trinity-list .entry-link {
+  display: grid;
+  grid-template-columns: max-content 1fr;  /* [label] [title] */
+  column-gap: 0.75rem;
+  row-gap: 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  align-items: start;
+}
+
+/* the “case-study / meta / …” pill */
+.trinity-index .trinity-list .entry-kind {
+grid-row: 1;
+  grid-column: 1;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.7rem 0.2rem;
+  margin: 0.1rem 0 0;
+  border-radius: 7px;
+  border: 1px dotted #444;
+  white-space: nowrap;
+}
+
+/* title */
+.trinity-index .trinity-list .entry-title {
+  grid-row: 1;
+  grid-column: 2;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* description spans full width under label + title */
+.trinity-index .trinity-list .entry-desc {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  margin: 0.4rem 0 0;
+}
+
+/* optional hover affordance */
+.trinity-index.trinity-list .entry-link:hover,
+.trinity-index.trinity-list .entry-link:focus-visible {
+  background: #f7f7f7;
+  outline: none;
+}
+.trinity-index.trinity-list .entry-desc:empty {
+  display: none;
+}
+
+/* mobile tweak: stack label above title */
+@media (max-width: 600px) {
+  .trinity-index.trinity-list .entry-link {
+    grid-template-columns: 1fr;
+  }
+  .trinity-index.trinity-list .entry-kind {
+    justify-self: flex-start;
+  }
+}
+
+
+/* =========== ENTRY PAGES =========== */
+/* Header as a block */
+.trinity-entry .article-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.trinity-entry__title {
+  margin-bottom: 0.4rem;
+}
+
+/* Deck (if present) */
+.trinity-entry__deck {
+  margin: 0.4rem 0 0.9rem;
+  font-style: italic;
+}
+
+.trinity-entry__meta {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.trinity-entry__author,
+.trinity-entry__date {
+  margin: 0;
+  display: block;
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.trinity-entry .trinity-case__deck {
+  margin: 0.25rem 0 1rem;
+  font-style: italic;
+}
+
+
+/* Applies note (case studies only) */
+.trinity-applies-note {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Divider */
+.trinity-entry > hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 0 0 1.75rem;
+}
+
+/* headings inside entry body */
+.trinity-entry h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.trinity-entry h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.trinity-applies-note {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+/* base link – no default underline */
+a.ext-link {
+  text-decoration: none;
+}
+/* underline only the text part */
+a.ext-link .ext-link__text {
+  text-decoration: underline;
+  text-underline-offset: 0.08em;
+}
+
+/* optional hover emphasis */
+a.ext-link:hover .ext-link__text {
+  text-decoration-thickness: 2px;
+}
+.trinity-case__dek {
+  margin: 0 0 1.25rem;
+  font-style: italic;
+}
+
+.trinity-case__deck {
+  margin: 0 0 1.25rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* =========== SHARED SERIES NAV =========== */
+
+/* Container */
+.series-nav {
+  margin-top: 1.25rem;
+  margin-bottom: 2.75rem;
+}
+
+/* Stack "series" label and the prev/next row */
+.series-nav__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/* "The Trinity Series" */
+.series-nav__center {
+  font-size: 0.8rem;
+  color: #777;
+  letter-spacing: 0.04em;
+}
+
+
+.series-nav__series {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Prev / next row */
+.series-nav__links {
+  display: flex;
+  width: 100%;
+  max-width: 40rem;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+/* Individual links */
+.series-nav__prev,
+.series-nav__next {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Align left/right */
+.series-nav__prev {
+  text-align: left;
+}
+
+.series-nav__next {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Subtle hover */
+.series-nav__prev:hover,
+.series-nav__next:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: stack prev / next */
+@media (max-width: 600px) {
+  .series-nav__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .series-nav__prev,
+  .series-nav__next {
+    max-width: 100%;
+    text-align: center;
+  }
+}

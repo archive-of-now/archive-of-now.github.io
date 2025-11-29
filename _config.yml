@@ -83,7 +83,7 @@ defaults:
   - scope:
       path: "_trinity"
     values:
-      layout: trinity
+      layout: trinity_entry
       seo:
         type: "article"
 

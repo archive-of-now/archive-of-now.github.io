@@ -1,0 +1,20 @@
+{%- comment -%}
+  Inline note used in case studies:
+  "This case applies the Trinity framework introduced in Universe’s Trinity ↗."
+  Looks up the core Trinity essay from the `trinity` collection.
+{%- endcomment -%}
+
+{%- assign core = site.trinity
+  | where: "sort_index", 1
+  | first -%}
+
+{%- if core -%}
+  <p class="trinity-applies-note">
+    <em>
+      This case applies the Trinity framework introduced in
+    <a href="/trinity/universes-trinity" class="ext-link">
+    <span class="ext-link__text">Universe’s Trinity</span>
+    </a>.
+    </em>
+  </p>
+{%- endif -%}

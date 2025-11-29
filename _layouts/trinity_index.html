@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+
+  <main class="trinity">
+    <article class="trinity-index">
+      <header class="article-header trinity-index__header">
+        {% if page.url == "/" %}
+          <!-- Homepage: no H1 article -->
+        {% else %}
+          <h1 class="trinity-index__title">{{ page.title }}</h1>
+          {% if page.description %}
+            <p class="trinity-index__intro">{{ page.description }}</p>
+          {% endif %}
+        {% endif %}
+      </header>
+
+      <section class="trinity-index__body">
+        {{ content }}
+      </section>
+    </article>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
