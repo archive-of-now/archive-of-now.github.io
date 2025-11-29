@@ -2,7 +2,8 @@
 sort_index: 7
 title: "How Trinity Can Be Wrong"
 description: |
-
+  Spells out concrete failure modes, disconfirming evidence, and user
+  misuses that make Trinity auditable instead of a universal just-so lens.
 ---
 
 _Trinity as a grammar is only useful if it can fail in specific ways._
