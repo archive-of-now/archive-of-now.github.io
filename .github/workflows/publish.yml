@@ -65,7 +65,14 @@ jobs:
 
       - name: Inject published and modified dates
         run: |
-          for f in $(find _essays -name "*.md"); do
+          # Find all *.md files under top-level directories starting with "_",
+          # excluding Jekyll internals like _includes, _layouts, _site, etc.
+          for f in $(find . -type f -name "*.md" \
+            -path "./_*/*" \
+            ! -path "./_includes/*" \
+            ! -path "./_layouts/*" \
+            ! -path "./_site/*"); do
+
             # Get first (added) commit date
             published=$(git log --diff-filter=A --follow --format=%cI -- "$f" | tail -1)
             # Get last (most recent) commit date
