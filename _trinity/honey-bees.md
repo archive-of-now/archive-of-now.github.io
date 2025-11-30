@@ -1,11 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: case-study
 sort_index: 40
+nav_title: "Honey Bees"
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Non‑Human Ecosystems: Honey Bees"
 description: |
   Honey bees under Trinity: from diverse pre-industrial landscapes to
   high-density migratory pollination, mapping how changing external
   fields reshape colony equilibria and turn local stresses into synchronized
   collapse.
+
+deck: |
+
 ---
 
 ## 0. Scope and framing

@@ -1,15 +1,25 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: case-study
 sort_index: 10
-layout: trinity
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Mega-Cascade 1914–1991"
-excerpt: |
+description: |
     A Trinity reading of the long rupture that runs from the First World War,
     through the Second, into the Cold War: one Equilibrium Cascade, three
     attempted stabilizations, and a rewritten meta-power field.
----
 
-*A long Equilibrium Cascade in a field that could no longer hold its
-shape.*
+deck: |
+  A long Equilibrium Cascade in a field that could no longer hold its
+  shape.
+
+---
 
 ## 0. Scope, method, and staging
 

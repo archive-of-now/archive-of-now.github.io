@@ -1,10 +1,22 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: meta
 sort_index: 6
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Who Trinity Is For"
 description: |
   Explains how Trinity functions as a pivot language across disciplines,
   outlining distinct use-modes for generalist systems thinkers and for
   specialists working deep inside a single field.
+
+deck: |
+
 ---
 
 Universe’s Trinity is a cross-domain grammar for how systems persist,

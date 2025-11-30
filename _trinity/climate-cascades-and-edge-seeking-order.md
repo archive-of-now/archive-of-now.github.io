@@ -1,16 +1,26 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: case-study
 sort_index: 20
-layout: trinity
+nav_title: "Climate Cascade"
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Climate Cascade and the Edge-Seeking Order"
-excerpt: |
+description: |
   A structural view of climate deadlock: not as failed will, but as the
   behaviour of a coupled system where fossil infrastructures, financial
   recursion, and national security logics all bias the field toward
   delayed and partial rebalancing.
----
 
-*A slow Equilibrium Cascade in a field that is structurally rewarded for
-pushing against planetary limits.*
+deck: |
+  A slow Equilibrium Cascade in a field that is structurally rewarded for
+  pushing against planetary limits.
+
+---
 
 ## 0. Scope, method, and staging
 

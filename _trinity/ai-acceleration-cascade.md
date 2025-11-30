@@ -1,12 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: case-study
 sort_index: 50
-title: AI Acceleration Cascade
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
+title: "AI Acceleration Cascade"
 description: |
+  Reads contemporary AI development through Trinity’s lens: a high-velocity
+  cascade in compute, data, and institutions that outpaces existing corridors
+  of viability.
 
----
-
-*A fast Equilibrium Cascade in a digital-capital field that starts overclocking
-its own infrastructure.*
+deck: |
+  A fast Equilibrium Cascade in a digital-capital field that starts overclocking
+  its own infrastructure.
 
 ---
 

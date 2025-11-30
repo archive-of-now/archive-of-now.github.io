@@ -1,12 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: core
 sort_index: 3
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Meta-Power"
 description: |
     An examination of meta-power: the ledger of Trinity Effects layered over
     time, hardening into institutional, infrastructural, and epistemic fields.
----
 
-*Second-order fields in a world shaped by Universe’s Trinity.*
+deck: |
+  Second-order fields in a world shaped by Universe’s Trinity.
+
+---
 
 If Universe’s Trinity is the grammar and the Trinity Effect is the first sentence the universe writes with it, then **Meta-Power** is the paragraph: the field of accumulated structure that gives later sentences their tone, rhythm, and constraints.
 

@@ -1,13 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: core
 sort_index: 4
-title: Equilibrium Cascades
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
+title: "Equilibrium Cascades"
 description: |
     An analysis of Equilibrium Cascades: turbulent passages where
     established attractors fail and the surrounding field is rapidly rewritten.
 
----
+deck: |
+  Turbulent rebalancing in a field shaped by Universe’s Trinity.
 
-*Turbulent rebalancing in a field shaped by Universe’s Trinity.*
+---
 
 If Universe’s Trinity is the grammar, the Trinity Effect the first sentence, and Meta-Power the paragraph, then **Equilibrium Cascades** are the edits: the moments when the paragraph no longer fits and must be rewritten.
 

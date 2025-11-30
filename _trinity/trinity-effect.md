@@ -1,12 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: core
 sort_index: 2
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "The Trinity Effect"
 excerpt: |
    An examination of the Trinity Effect: how a minimal triadic structure
    produces recurring macro-patterns in ecosystems and human systems.
----
 
-*First-order emergence in a world shaped by Universe’s Trinity.*
+deck: |
+  First-order emergence in a world shaped by Universe’s Trinity.
+
+---
 
 If Universe’s Trinity is the grammar, the Trinity Effect is the first sentence the universe writes with it.
 

@@ -1,14 +1,24 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: case-study
 sort_index: 30
-title: The Authority–Experiment Complex
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
+title: "The Authority–Experiment Complex"
 description: |
   Examines how mid-century psychology converted shocking experiments
   into portable recipes for managing compliance in bureaucracies,
   militaries, and markets.
 
----
+deck: |
+  How Behavioral Science Rebuilt Obedience After 1945
 
-*How Behavioral Science Rebuilt Obedience After 1945*
+---
 
 > Hypothesis: the post‑war wave of behavioral research on obedience,
 > conformity, and conditioning was not an academic curiosity. It was an

@@ -1,12 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: meta
 sort_index: 7
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "How Trinity Can Be Wrong"
 description: |
   Spells out concrete failure modes, disconfirming evidence, and user
   misuses that make Trinity auditable instead of a universal just-so lens.
----
 
-_Trinity as a grammar is only useful if it can fail in specific ways._
+deck: |
+  Trinity as a grammar is only useful if it can fail in specific ways.
+
+---
 
 The earlier essays in this series built the stack:
 

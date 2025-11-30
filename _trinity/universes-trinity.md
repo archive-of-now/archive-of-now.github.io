@@ -1,14 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: core
 sort_index: 1
-layout: trinity
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Universe’s Trinity"
 excerpt: |
   A study of the patterns that shape how systems form, stabilize,
   and transform across scales—from stars to societies to minds.
 
----
+deck: |
+  A minimal grammar for how systems keep themselves alive.
 
-*A minimal grammar for how systems keep themselves alive.*
+---
 
 ## Preamble
 

@@ -1,12 +1,23 @@
 ---
+version: "1.0"
+series: "Trinity Framework"
+kind: meta
 sort_index: 5
+nav_title:
+tags:
+  - trinity
+  - systems
+  - essays
+
 title: "Why a New Vocabulary?"
 description: |
     Explains why Universe’s Trinity introduces a new lexicon, how it avoids inherited baggage,
     and how its concepts translate across physics, biology, cognition, and institutions.
----
 
-*Universality, Mapping, and the Trinity Framework*
+deck: |
+  Universality, Mapping, and the Trinity Framework
+
+---
 
 *Anticipating the natural question: why not use existing triads?*
 
