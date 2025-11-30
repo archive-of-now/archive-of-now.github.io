@@ -283,3 +283,89 @@ a.ext-link:hover .ext-link__text {
     text-align: center;
   }
 }
+
+
+/* ========================
+   Trinity mobile layout
+   ======================== */
+@media (max-width: 600px) {
+
+  /* Overall padding */
+  main.trinity {
+    padding: 0 0.9rem;
+  }
+
+  /* --- Article headers (index + entry) --- */
+
+  .trinity-entry .article-header,
+  .trinity-index .article-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .trinity-entry__title {
+    font-size: 1.6rem;      /* shrink H1 a bit */
+    line-height: 1.2;
+  }
+
+  .trinity-entry__deck {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.9rem;
+  }
+
+  .trinity-entry__meta,
+  .trinity-applies-note {
+    font-size: 0.85rem;
+  }
+
+  /* Reduce gap before section 0 */
+  .trinity-entry > hr {
+    margin-bottom: 1.25rem;
+  }
+
+  /* --- Series navigation --- */
+
+  .series-nav {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+  }
+
+  .series-nav__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .series-nav__prev,
+  .series-nav__next {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0;       /* overrides desktop auto-right on next */
+  }
+
+  /* --- Trinity index list --- */
+
+  .trinity-index .trinity-list .entry {
+    margin: 1.25rem 0;
+  }
+
+  .trinity-index .entry-link {
+    flex-direction: column;        /* stack label above title */
+    align-items: flex-start;
+    row-gap: 0.2rem;
+  }
+
+  .trinity-index .entry-kind {
+    margin-bottom: 0.1rem;
+  }
+
+  .trinity-index .entry-title {
+    font-size: 1.05rem;
+  }
+
+  .trinity-index .entry-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
