@@ -2,7 +2,7 @@
 version: "1.0"
 series: "Trinity Framework"
 kind: meta
-sort_index: 8
+sort_index: 9
 nav_title: "Case Study Methodology"
 tags:
   - trinity
