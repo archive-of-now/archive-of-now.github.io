@@ -1,7 +1,7 @@
 ---
 version: "1.0"
 series: "Trinity Framework"
-kind: into
+kind: intro
 sort_index: 0.1
 nav_title:
 tags:
