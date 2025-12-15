@@ -9,18 +9,22 @@ title: Archive of Now
 ---
 {% assign essays = site.essays | sort: "date" | reverse | where_exp: "item", "item.featured != true" %}
 {% assign featured = site.essays | where: "featured", true | first %}
-<ul class="essay-list">
+<ul class="series-list">
   {% if featured %}
-  <li>
-    <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
-    <p>{{ featured.description | default: featured.excerpt }}</p>
+  <li class="entry">
+    <a href="{{ featured.url | relative_url }}"  class="entry-link {{ ' no-pill' }}">
+    <h2 class="entry-title">{{ featured.title }}</h2>
+    <p class="entry-desc">{{ featured.description | default: featured.excerpt }}</p>
+    </a>
   </li>
   {% endif %}
   {% for essay in essays %}
     {% unless essay.path contains 'index.md' %}
-      <li>
-        <h2><a href="{{ essay.url | relative_url }}">{{ essay.title }}</a></h2>
-        <p>{{ essay.description | default: essay.excerpt }}</p>
+      <li class="entry">
+        <a href="{{ essay.url | relative_url }}"  class="entry-link {{ ' no-pill' }}">
+        <h2 class="entry-title">{{ essay.title }}</h2>
+        <p class="entry-desc">{{ essay.description | default: essay.excerpt }}</p>
+        </a>
       </li>
     {% endunless %}
   {% endfor %}
