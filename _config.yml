@@ -16,17 +16,6 @@ author:
   email: ""
   url: "https://archive-of-now.github.io"
 
-collections:
-  essays:
-    output: true
-    permalink: /:path
-  trinity:
-    output: true
-    permalink: /trinity/:path
-  autonomy:
-    output: true
-    permalink: /autonomy/:path
-
 # ===============================
 # MARKDOWN + BUILD
 # ===============================
@@ -47,11 +36,10 @@ exclude:
 # ===============================
 # NAVIGATION (used by nav.html)
 # ===============================
-nav_links:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about/"
+nav_items:
+  - trinity
+  - autonomy
+  - side-channel
 
 # ===============================
 # SEO + DISCOVERY
@@ -69,9 +57,20 @@ sass:
 # Feeds + sitemap are automatically generated at:
 #   /feed.xml
 #   /sitemap.xml
+collections:
+  essays:
+    output: true
+    permalink: /:path
+  trinity:
+    output: true
+    permalink: /trinity/:path
+  autonomy:
+    output: true
+    permalink: /autonomy/:path
+  side-channel:
+    output: true
+    permalink: /side-channel/:path
 
-
-# Ensure robots.txt allows indexing
 defaults:
   - scope:
       path: "_essays"
@@ -89,6 +88,12 @@ defaults:
       path: "_trinity"
     values:
       layout: series_entry
+      seo:
+        type: "article"
+  - scope:
+      path: "_side-channel"
+    values:
+      layout: default
       seo:
         type: "article"
 

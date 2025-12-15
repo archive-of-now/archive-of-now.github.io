@@ -1,11 +1,8 @@
-{% assign others = site.collections
-  | where_exp: "item", "item.label != 'essays'"
-  | where_exp: "item", "item.label != 'posts'"
-%}
 <nav>
 <ul>
-  {% for collection in others %}
-    {% assign idx = collection["docs"]
+  {% for collection_name in site.nav_items %}
+    {% assign collection = site[collection_name] %}
+    {% assign idx = collection
       | where_exp: "item", "item.sort_index == 0"
       | first
     %}
