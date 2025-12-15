@@ -1,7 +1,19 @@
+{% assign others = site.collections
+  | where_exp: "item", "item.label != 'essays'"
+  | where_exp: "item", "item.label != 'posts'"
+%}
 <nav>
-  <ul>
-    {% for item in site.nav_links %}
-      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
+<ul>
+  {% for collection in others %}
+    {% assign idx = collection["docs"]
+      | where_exp: "item", "item.sort_index == 0"
+      | first
+    %}
+    <li>
+      <a href="{{ idx.permalink | relative_url }}">{{ idx.series}}</a>
+    </li>
+    {% if idx %}
+    {% endif %}
+  {% endfor %}
+</ul>
 </nav>

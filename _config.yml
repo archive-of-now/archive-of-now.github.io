@@ -61,6 +61,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+sass:
+  sass_dir: _sass
+  style: compressed      # or compressed | expanded
+
+
 # Feeds + sitemap are automatically generated at:
 #   /feed.xml
 #   /sitemap.xml
@@ -77,13 +82,13 @@ defaults:
   - scope:
       path: "_autonomy"
     values:
-      layout: default
+      layout: series_entry
       seo:
         type: "article"
   - scope:
       path: "_trinity"
     values:
-      layout: trinity_entry
+      layout: series_entry
       seo:
         type: "article"
 

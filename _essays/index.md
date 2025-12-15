@@ -1,5 +1,10 @@
 ---
-layout: default
+permalink: /
+series: "Home"
+sort_index: 0
+kind: index
+
+layout: series_index
 title: Archive of Now
 ---
 {% assign essays = site.essays | sort: "date" | reverse | where_exp: "item", "item.featured != true" %}

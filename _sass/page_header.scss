@@ -1,0 +1,29 @@
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* spacing between h2 and nav */
+    margin-bottom: 2rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem; /* spacing between nav items */
+        }
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

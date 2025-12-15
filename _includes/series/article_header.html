@@ -1,0 +1,32 @@
+
+<header class="article__header">
+<h1 class="article__title">{{ page.title }}</h1>
+{% if page.deck %}
+    <p class="article__deck">
+    {{ page.deck }}
+    </p>
+{% endif %}
+{%- unless page.kind == "index" -%}
+    <div class="article__meta">
+        {% if site.author.name %}
+        <p class="article__author">
+            By {{ site.author.name }}
+        </p>
+        {% endif %}
+        {% if page.date %}
+        <p class="article__date">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+            </time>
+        </p>
+        {% endif %}
+    </div>
+    {% if page.kind == "case-study" %}
+        {% include trinity/applies-note.html %}
+    {% endif %}
+{%- else -%}
+    {% if page.description %}
+        <p class="article__intro">{{ page.description }}</p>
+    {% endif %}
+{%- endunless -%}
+</header>

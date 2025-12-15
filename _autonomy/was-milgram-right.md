@@ -1,8 +1,24 @@
 ---
-title: "Was Milgram Right? Rethinking Obedience After 10,000 Years"
+version: "1.0"
+series: "On Autonomy"
+kind:
+sort_index: 10
+nav_title:
+tags:
+  - meta
+  - philosophy
+  - obedience
+  - autonomy
+
+title: "Was Milgram Right?"
 description: |
-    Milgram “proved” people obey authority.But what if obedience
-    isn’t natural — it’s engineered? What if the only unconditioned humans left… are teenagers?"
+  Milgram “proved” people obey authority.But what if obedience
+  isn’t natural — it’s engineered? What if the only unconditioned humans
+  left… are teenagers?"
+
+deck: |
+  Rethinking Obedience After 10,000 Years
+
 ---
 
 > *The ideas here stand on the shoulders of many researchers. But the through-line I sketch - the long, 10,000-year story of how humans were shaped from anti-authoritarian foragers into obedience-conditioned moderns, and what that means for interpreting Milgram - doesn’t seem to appear anywhere as a single narrative. If someone has already mapped this full arc, consider this a happy rediscovery rather than a claim of invention. And send me the link - I’d genuinely like to read it.*

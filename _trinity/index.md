@@ -1,5 +1,5 @@
 ---
-layout: trinity_index
+layout: series_index
 permalink: /trinity/
 seo:
   type: website
@@ -20,21 +20,8 @@ description: |
 
 ---
 
-**Recommended reading order: top-down**
-<section class="series-index">
-  <ul class="trinity-list">
-    {%- assign essays = site.trinity | sort: "sort_index" -%}
-
-    {%- for essay in essays -%}
-      {%- unless essay.path contains 'index.md' -%}
-        <li class="entry">
-          <a href="{{ essay.url | relative_url }}" class="entry-link">
-            <span class="entry-kind">{{ essay.kind }}</span>
-            <h2 class="entry-title">{{ essay.title }}</h2>
-            <p class="entry-desc">{{ essay.description | default: essay.excerpt }}</p>
-          </a>
-        </li>
-      {%- endunless -%}
-    {%- endfor -%}
-  </ul>
-</section>
+<p><i>Recommended reading order: top-down</i></p>
+{%- assign entries = site[page.collection]
+     | where_exp: "item", "item.sort_index != 0"
+     | sort: "sort_index" -%}
+{%- include index_list.html entries=entries -%}

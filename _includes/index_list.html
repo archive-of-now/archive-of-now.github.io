@@ -1,0 +1,13 @@
+<ul class="series-list">
+  {%- for entry in include.entries -%}
+    <li class="entry">
+      <a href="{{ entry.url | relative_url }}" class="entry-link {%-  unless entry.kind -%}{{ ' no-pill' }}{%- endunless -%}">
+        {%- if entry.kind -%}
+        <span class="entry-kind">{{ entry.kind }}</span>
+        {%- endif -%}
+        <h2 class="entry-title">{{ entry.title }}</h2>
+        <p class="entry-desc">{{ entry.description | default: entry.excerpt }}</p>
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
