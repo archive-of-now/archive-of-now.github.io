@@ -38,7 +38,7 @@ exclude:
 # ===============================
 nav_items:
   - trinity
-  - autonomy
+  - technology
   - side-channel
 
 # ===============================
@@ -64,9 +64,9 @@ collections:
   trinity:
     output: true
     permalink: /trinity/:path
-  autonomy:
+  technology:
     output: true
-    permalink: /autonomy/:path
+    permalink: /technology/:path
   side-channel:
     output: true
     permalink: /side-channel/:path
@@ -79,7 +79,7 @@ defaults:
       seo:
         type: "article"
   - scope:
-      path: "_autonomy"
+      path: "_technology"
     values:
       layout: series_entry
       seo:
