@@ -2,20 +2,22 @@
 <html lang="en">
 {% include head.html %}
 <body>
-  {% include page_header.html %}
-  <main>
-    <article>
-      <header class="article-header">
-        {% if page.url == "/" %}
+  <div class="container">
+    {% include page_header.html %}
+    <main class="page-main">
+      <article>
+        <header class="article-header">
+          {% if page.url == "/" %}
           <!-- Homepage: no H1 article -->
-        {% else %}
+          {% else %}
           <h1>{{ page.title }}</h1>
           <p>{{ page.description }}</p>
-        {% endif %}
-      </header>
-      {{ content }}
-    </article>
-  </main>
-  {% include footer.html %}
+          {% endif %}
+        </header>
+        {{ content }}
+      </article>
+    </main>
+    {% include page_footer.html %}
+  </div>
 </body>
 </html>

@@ -15,10 +15,10 @@ deck: |
      | sort: "date" | reverse -%}
 
 
-<ul class="series-list">
+<ul class="series-list side-channel">
   {%- for entry in entries -%}
     <li class="entry">
-        <p class="entry-desc">{{ entry.description | default: entry.excerpt }}</p>
+    {{ entry.content }}
     </li>
   {%- endfor -%}
 </ul>

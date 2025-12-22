@@ -1,0 +1,27 @@
+@use "tokens" as *;
+
+.container {
+  width: min(100%, $container-max);
+  margin-inline: auto;
+  padding-inline: $gutter;
+
+  .page-header {
+    padding-block: 1.25rem 0.75rem;
+  }
+
+  .page-main {
+    padding-block: 1.25rem 2.5rem;
+  }
+
+  .page-footer {
+    padding-block: 2rem 2.5rem;
+  }
+
+}
+
+
+@media (min-width: $bp-sm) {
+  main {
+    padding-block: 3rem 4rem;
+  }
+}

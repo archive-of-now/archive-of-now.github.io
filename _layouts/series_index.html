@@ -2,16 +2,17 @@
 <html lang="en">
 {% include head.html %}
 <body class="series-index">
-  {% include page_header.html %}
-  <main class="series-main">
-    <article class="article">
-      {%- include series/article_header.html -%}
-      <hr/>
-      <section class="article__body">
-        {{ content }}
-      </section>
-    </article>
-  </main>
-  {% include footer.html %}
+  <div class="container">
+    {% include page_header.html %}
+    <main class="page-main">
+      <article class="article">
+        {%- include series/article_header.html -%}
+        <section class="article__body">
+          {{ content }}
+        </section>
+      </article>
+    </main>
+    {% include page_footer.html %}
+  </div>
 </body>
 </html>

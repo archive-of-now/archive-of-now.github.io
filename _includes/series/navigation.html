@@ -1,43 +1,44 @@
 {%- assign docs = site[page.collection]
-  | where_exp: 'doc', 'doc.sort_index != 0'
-  | sort: 'sort_index' -%}
+| where_exp: 'doc', 'doc.sort_index != 0'
+| sort: 'sort_index' -%}
 
-  {% assign collection_index = site[page.collection]
-  | where_exp: 'doc', 'doc.sort_index == 0'
-  | first %}
+{% assign collection_index = site[page.collection]
+| where_exp: 'doc', 'doc.sort_index == 0'
+| first %}
 
 {%- assign current_index = nil -%}
 {%- for doc in docs -%}
-  {%- if doc.url == page.url -%}
-    {%- assign current_index = forloop.index0 -%}
-  {%- endif -%}
+{%- if doc.url == page.url -%}
+{%- assign current_index = forloop.index0 -%}
+{%- endif -%}
 {%- endfor -%}
 
 {%- if current_index != nil -%}
-  <nav class="series-nav">
-    <div class="series-nav__row">
-      <div class="series-nav__links">
-        {%- if current_index > 0 -%}
-          {%- assign prev_index = current_index | minus: 1 -%}
-          {%- assign prev = docs[prev_index] -%}
-          <a href="{{ prev.url | relative_url }}"  class="series-nav__prev" >
-            &larr; Previous: {{ prev.nav_title|default: prev.title }}
-          </a>
-        {%- endif -%}
-        {%- assign last_index = docs | size | minus: 1 -%}
-        {%- if current_index < last_index -%}
-          {%- assign next_index = current_index | plus: 1 -%}
-          {%- assign nxt = docs[next_index] -%}
-          <a href="{{ nxt.url | relative_url }}" class="series-nav__next">
-            Next: {{ nxt.nav_title|default: nxt.title }} &rarr;
-          </a>
-        {%- endif -%}
-      </div>
-      <div class="series-nav__center">
-        <a href="{{ collection_index.url | relative_url }}" class="series-nav__series">
-          Series Index
-        </a>
-      </div>
-    </div>
-  </nav>
+<nav class="series-nav">
+  <div class="prev">
+    {%- if current_index > 0 -%}
+    {%- assign prev_index = current_index | minus: 1 -%}
+    {%- assign prev = docs[prev_index] -%}
+    <a href="{{ prev.url | relative_url }}">
+      &larr; Previous: {{ prev.nav_title|default: prev.title }}
+    </a>
+    {%- endif -%}
+
+  </div>
+  <div class="next">
+    {%- assign last_index = docs | size | minus: 1 -%}
+    {%- if current_index < last_index -%} {%- assign next_index=current_index | plus: 1 -%} {%- assign
+      nxt=docs[next_index] -%} <a href="{{ nxt.url | relative_url }}">
+      Next: {{ nxt.nav_title|default: nxt.title }} &rarr;
+      </a>
+      {%- endif -%}
+
+  </div>
+  <div class="index">
+    <a href="{{ collection_index.url | relative_url }}">
+      Series Index
+    </a>
+
+  </div>
+</nav>
 {%- endif -%}

@@ -1,0 +1,36 @@
+@use "tokens" as *;
+.page-main {
+    table {
+        display: block; // allows overflow scrolling
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+    }
+
+    th,
+    td {
+        padding: 0.6rem 0.5rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        text-align: left;
+        vertical-align: top;
+        white-space: nowrap; // optional: prevents ugly wraps in cells
+    }
+
+    thead th {
+        border-bottom: 2px solid $muted;
+    }
+
+    // Make wide tables scroll instead of exploding layout
+    .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid $muted;
+        border-radius: $radius;
+        padding: 0.25rem 0.5rem;
+        margin: 1.5rem 0;
+    }
+}
