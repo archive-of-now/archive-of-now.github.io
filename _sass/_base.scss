@@ -47,22 +47,43 @@ p {
   margin: 0 0 1rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   line-height: 1.12;
   letter-spacing: -0.02em;
   margin: 0 0 0.75rem;
 }
 
-h1 { font-size: clamp(2rem, 6vw, 3rem); }
-h2 { font-size: clamp(1.4rem, 4vw, 2rem); }
-h3 { font-size: 1.25rem; }
+h1 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
 
-.small, small {
+h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+
+@media (min-width: $bp-sm) {
+  h1 {
+    font-size: clamp(1.9rem, 2.5vw, 2.0rem);
+    font-weight: 600;
+    margin-bottom: 0.4em;
+  }
+}
+
+.small,
+small {
   color: $muted;
   font-size: 0.95rem;
 }
 
-code, pre {
+code,
+pre {
   font-family: $font-mono;
 }
 

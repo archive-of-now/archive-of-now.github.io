@@ -74,14 +74,13 @@ $rule-color: $rule;
             margin: 0 0 0.5rem;
             line-height: 1.08;
             letter-spacing: -0.02em;
-            font-size: clamp(2rem, 7vw, 3rem);
             text-wrap: balance;
         }
 
         .article__deck {
             margin: 0 0 0.9rem;
-            color: rgba(0, 0, 0, 0.65);
-            font-size: 1.05rem;
+            color: #555;
+            font-size: clamp(1.1rem, 2.2vw, 1.25rem);
             line-height: 1.45;
         }
 
@@ -106,20 +105,19 @@ $rule-color: $rule;
 
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: $bp-sm) {
         .article__header {
             padding-top: 2rem;
+
+            .article__title {
+                margin-bottom: 0.65rem;
+            }
+
+            .article__meta {
+                gap: 0.1rem;
+            }
         }
 
-        .article__title {
-            font-size: clamp(2.6rem, 4.5vw, 4rem);
-            margin-bottom: 0.65rem;
-        }
-
-        // optional: make meta tighter on desktop
-        .article__meta {
-            gap: 0.1rem;
-        }
     }
 
     /* General figure styling (screenshots, diagrams, etc.) */
