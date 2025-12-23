@@ -11,8 +11,8 @@ nav_title:
 tags:
 
 title: "Technology"
-description: |
-
+deck: |
+  Examining how modern computing systems are designed, structured, and operated.
 ---
 {%- assign entries = site[page.collection]
      | where_exp: "item", "item.sort_index != 0"

@@ -14,7 +14,7 @@ tags:
   - essays
 
 title: Universe's Trinity
-description: |
+deck: |
   An exploration of how a minimal three-part grammar helps explain persistent
   patterns in ecosystems, institutions, markets, geopolitics, and other complex systems.
 

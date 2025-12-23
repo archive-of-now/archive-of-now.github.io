@@ -2,7 +2,7 @@
 version: "1.0"
 series: "Technology"
 kind:
-sort_index: 20
+sort_index: 30
 nav_title: ""
 tags:
 

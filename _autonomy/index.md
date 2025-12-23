@@ -11,7 +11,7 @@ nav_title:
 tags:
 
 title: "On Autonomy"
-description: |
+deck: |
 
 ---
 {%- assign entries = site[page.collection]
