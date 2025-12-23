@@ -58,6 +58,9 @@ sass:
 #   /feed.xml
 #   /sitemap.xml
 collections:
+  autonomy:
+    output: true
+    permalink: /:path
   essays:
     output: true
     permalink: /:path
@@ -72,6 +75,12 @@ collections:
     permalink: /side-channel/:path
 
 defaults:
+  - scope:
+      path: "_autonomy"
+    values:
+      layout: essay
+      seo:
+        type: "article"
   - scope:
       path: "_essays"
     values:
