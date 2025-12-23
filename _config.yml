@@ -60,7 +60,7 @@ sass:
 collections:
   autonomy:
     output: true
-    permalink: /:path
+    permalink: /autonomy/:path
   essays:
     output: true
     permalink: /:path
@@ -120,14 +120,17 @@ show_drafts: false
 # ===============================
 feed:
   collections:
+    - autonomy
     - essays
+    - technology
+    - trinity
 
 # ===============================
 # OPTIONAL SOCIAL PREVIEW (OG tags)
 # ===============================
 social:
   twitter: ""
-  github: "your-org"
+  github: ""
   linkedin: ""
 
 # ===============================
