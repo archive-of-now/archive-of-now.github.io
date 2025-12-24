@@ -103,6 +103,7 @@ defaults:
       path: "_side-channel"
     values:
       layout: default
+      sitemap: false
       seo:
         type: "article"
 
