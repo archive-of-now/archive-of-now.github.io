@@ -16,7 +16,8 @@ tags:
 title: Universe's Trinity
 deck: |
   An exploration of how a minimal three-part grammar helps explain persistent
-  patterns in ecosystems, institutions, markets, geopolitics, and other complex systems.
+  patterns in ecosystems, institutions, markets, geopolitics, and other complex
+  systems.
 
 ---
 
